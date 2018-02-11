@@ -4,16 +4,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Calculadora</title>
-	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		body {font-family: sans-serif;}
+	</style>
 </head>
 <body>
 	Número:
 	<input type="text" id="n1"><br>
 	<button onclick="cuadrado()"> x<sup>2</sup></button>
+	<button onclick="inverso()">1/x</button>
 	<script type="text/javascript" charset="utf-8">
-		function cuadrado() {
+		function cuadrado () {
 			var n = document.getElementById("n1");
 			n.value *= n.value;
+		}
+		function inverso () {
+			var n = document.getElementById("n1");
+			n.value = 1/n.value;
 		}
 	</script>
 </body>

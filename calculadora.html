@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora</title>
+	<style type="text/css" media="screen">
+		body {font-family: sans-serif;}
+	</style>
+</head>
+<body>
+	Número:
+	<input type="text" id="n1" onclick="empty()"><br>
+	<button onclick="inverse()">1/x</button>
+	<script type="text/javascript">
+		function inverse () {
+			var n = document.getElementById("n1");
+			n.value = 1/n.value;
+		}
+	</script>
+</body>
+</html>

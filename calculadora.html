@@ -10,12 +10,17 @@
 </head>
 <body>
 	Número:
-	<input type="text" id="n1" onclick="empty()"><br>
-	<button onclick="inverse()">1/x</button>
+	<input type="text" id="n1""><br>
+	<button onclick="inverso()">1/x</button>
+	<button onclick="cuadrado()"> x<sup>2</sup></button>
 	<script type="text/javascript">
-		function inverse () {
+		function inverso () {
 			var n = document.getElementById("n1");
 			n.value = 1/n.value;
+		}
+		function cuadrado () {
+			var n = document.getElementById("n1");
+			n.value *= n.value;
 		}
 	</script>
 </body>
